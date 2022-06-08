@@ -295,6 +295,7 @@ a {
 .about-me {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .about-me > * {
@@ -375,6 +376,11 @@ a {
   .nav ul {
     flex-direction: column;
     align-items: center;
+  }
+
+  .about-me {
+    flex-direction: column;
+    text-align: center;
   }
 }
 
