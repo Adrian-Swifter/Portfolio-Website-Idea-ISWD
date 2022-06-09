@@ -292,16 +292,16 @@ a {
 }
 
 /* ***********ABOUT************* */
-.about-me {
+.flex-section {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.about-me > * {
+.flex-section > * {
   flex: 1;
 }
-.section-anchor {
+.flex-section-anchor {
   color: var(--first-color);
   text-transform: uppercase;
   background-color: var(--accent-color);
@@ -310,8 +310,23 @@ a {
   border-radius: 25px;
 }
 
-.am-about-text {
+.flex-section-about-text {
   color: #d4d4d4;
+}
+
+/* **********SKILLS*********** */
+.flex-section-skills-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  justify-items: end;
+}
+
+.flex-section-skills-container img {
+  width: 70px;
+  height: 70px;
+  padding: 1rem;
+  background-color: var(--accent-color);
 }
 
 /* **********RESPONSIVE*********** */
@@ -378,7 +393,7 @@ a {
     align-items: center;
   }
 
-  .about-me {
+  .flex-section {
     flex-direction: column;
     text-align: center;
   }
