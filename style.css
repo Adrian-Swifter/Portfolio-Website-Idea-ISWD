@@ -443,6 +443,10 @@ a.gallery-active-link {
   .gallery-images {
     grid-template-columns: 1fr 1fr;
   }
+
+  .gallery-header {
+    flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 500px) {
